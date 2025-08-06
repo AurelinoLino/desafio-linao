@@ -1,4 +1,4 @@
-// Entrada nomeando 2 variaveis nome e xp (experiencia)
+// Entrada nomeando 3 variaveis nome, xp (experiencia) e nivel
 
 let nome = "Aurelino"
 
@@ -6,31 +6,25 @@ let XP = 1000
 
 let nivel = "AVS"
 
-//Repeticao
+//Repeticoes com classificacoes
 
-if (XP<1000) {nivel = "Ferro"
-    
-}
+if (XP < 1000) {nivel = "Ferro"}
 
-else if (xp>1000) and (xp<=2000) 
+else if (XP >= 1000 && XP <= 2000) {nivel = "Bronze"}
 
-{ nivel = "Bronze"
-    
-} 
+else if (XP >= 2001 && XP <= 5000) {nivel = "Prata"}
 
-else if (xp>2001) and (xp<=5000)
+else if (XP >= 5001 && XP <= 7000) {nivel = "Ouro"}
 
-{nivel = "Prata"}
+else if (XP >= 7001 && XP <= 8000) {nivel = "Platina"}
 
-else {"Vc esta fora do nivel"}
+else if (XP >= 8001 & XP <= 9000) {nivel = "Ascendente"}
 
-// 50001 7000 Ouro
-// 7001 8000 Platina
-// 8001 9000 Ascendente
-// 9001 10000 Imortal
-// 10001 Radiante
+else if (XP >= 9001 && XP <= 10000) {nivel = "Imortal"}
+
+else if (XP >= 10001) {nivel = "Radiante"}
 
 
 // Saida
 
-console.log("O Herói de nome " + nome + "está no nivel de " + nivel)
+console.log("O Herói de nome " + nome + " está no nivel de " + nivel)
